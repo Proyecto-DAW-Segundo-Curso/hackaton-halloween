@@ -2,10 +2,9 @@
 import '../styles/Boton.css';
 
 function Boton(props) {
+
 	const esInicio = (valor) => {
-		cajaBoton = () => {
-			
-		}
+		return valor !== 'INICIO';
 	}
 
 	return (
