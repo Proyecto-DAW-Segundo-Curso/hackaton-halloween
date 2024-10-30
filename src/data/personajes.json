@@ -1,0 +1,24 @@
+{
+    "personajes": [
+        {
+            "id": "personaje-1",
+            "name": "víctima",
+            "image": "img/víctima.png",
+            "position": "derecha",
+            "animation": {
+                "moveDistance": 0,
+                "direction": "quieto"
+            }
+        },
+        {
+            "id": "personaje-2",
+            "name": "Jason",
+            "image": "img/Jason.png",
+            "position": "izquierda",
+            "animation": {
+                "moveDistance": 20,
+                "direction": "derecha"
+            }
+        }
+    ]
+}
