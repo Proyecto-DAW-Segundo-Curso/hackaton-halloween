@@ -3,7 +3,7 @@
         {
             "id": "personaje-1",
             "name": "víctima",
-            "image": "img/víctima.png",
+            "image": "img/victimaAtada.png",
             "position": "derecha",
             "animation": {
                 "moveDistance": 0,
@@ -13,7 +13,7 @@
         {
             "id": "personaje-2",
             "name": "Jason",
-            "image": "img/Jason.png",
+            "image": "img/JasonPixel.png",
             "position": "izquierda",
             "animation": {
                 "moveDistance": 20,
