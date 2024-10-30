@@ -15,7 +15,8 @@ function App() {
         </div>
         <div className='contenedor-juego'>
           <div className='contenedor-botones'>
-
+            <Boton>INICIO</Boton>
+            <Boton>REINICIO</Boton>
           </div>
           <div className='contenedor-animacion'>
 

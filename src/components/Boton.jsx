@@ -2,14 +2,18 @@
 import '../styles/Boton.css';
 
 function Boton(props) {
+
 	const esInicio = (valor) => {
-		cajaBoton = () => {
-			
-		}
+		return valor !== 0;
 	}
 
 	return (
-		<div className="cajaBoton"></div>
+		<div 
+			className='cajaBoton'
+			onClick={() => {}}
+		>
+			{props.children}
+		</div>
 
 
 	);
