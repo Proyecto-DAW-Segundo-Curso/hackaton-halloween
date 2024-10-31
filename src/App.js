@@ -2,9 +2,11 @@
 import './App.css';
 import Boton from './components/Boton';
 import Personajes from "./components/Personajes";
-import personajes from './data/personajes.json';
+import personajesData from './data/personajes.json';
+import Personajes2 from './components/Personajes2';
 
 function App() {
+  const moveDistance = 50; 
   return (
     <div className="App">
 
@@ -22,15 +24,17 @@ function App() {
           </div>
           <div className='contenedor-animacion'>
             
-            {personajes.personajes.map((personaje) => (
+          {/*{personajesData.personajes.map((personaje) => ( 
               <Personajes
                 key={personaje.id}
-                name={personaje.name}
-                image={personaje.image}
-                position={personaje.position}
-                animation={personaje.animation}
+                personaje={personaje}  // Pasa el objeto personaje
+                moveDistance={moveDistance} // Pasa la distancia de movimiento
               />
-            ))}
+            ))}*/}
+
+            <Personajes2>
+
+            </Personajes2>
 
           </div>
         </div>

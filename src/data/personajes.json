@@ -1,24 +1,22 @@
-{
-    "personajes": [
-        {
-            "id": "personaje-1",
-            "name": "víctima",
-            "image": "img/victimaAtada.png",
-            "position": "derecha",
-            "animation": {
-                "moveDistance": 0,
-                "direction": "quieto"
-            }
-        },
-        {
-            "id": "personaje-2",
-            "name": "Jason",
-            "image": "img/JasonPixel.png",
-            "position": "izquierda",
-            "animation": {
-                "moveDistance": 20,
-                "direction": "derecha"
-            }
+[
+    {
+        "id": "personaje-1",
+        "name": "víctima",
+        "image": "img/victimaAtada.png",
+        "position": "derecha",
+        "animation": {
+            "moveDistance": 0,
+            "direction": "quieto"
         }
-    ]
-}
+    },
+    {
+        "id": "personaje-2",
+        "name": "Jason",
+        "image": "img/JasonPixel.png",
+        "position": "izquierda",
+        "animation": {
+            "moveDistance": 20,
+            "direction": "derecha"
+        }
+    }
+]

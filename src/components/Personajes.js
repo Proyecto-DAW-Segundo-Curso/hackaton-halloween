@@ -1,21 +1,21 @@
 // src/Character.js
 import React from 'react';
 
-function Personaje({ personaje, moveDistance }) {
+function Personajes({ personajes, moveDistance }) {
     const personajeStyle = {
-        transform: `translateX(${personaje.position === "izquierda" ? moveDistance : 0}px)`,
+        transform: `translateX(${personajes.position === "izquierda" ? moveDistance : 0}px)`,
         transition: 'transform 0.3s',
         width: '50px',
     };
 
     return (
         <img
-            src={personaje.image}
-            alt={personaje.name}
+            src={personajes.image}
+            alt={personajes.name}
             style={personajeStyle}
             className="personaje"
         />
     );
 }
 
-export default Personaje;
+export default Personajes;
