@@ -19,6 +19,7 @@
   background-color: aliceblue;
   margin-top: 10px;
   box-shadow: 3px 3px 3px 3px blue;
+  border-radius: 10px;
 }
 
 .contenedor-respuesta{
@@ -27,17 +28,21 @@
   background-color: aliceblue;
   margin-top: 10px;
   box-shadow: 3px 3px 3px 3px blue;
+  border-radius: 10px;
+
 }
 
 .contenedor-juego{
   width: 95vw;
-  height: 70%;
+  height: 60%;
   background-color: aliceblue;
   margin-top: 10px;
   box-shadow: 3px 3px 3px 3px blue;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .contenedor-botones{
@@ -46,10 +51,13 @@
   background-color: rgb(37, 87, 131);
   margin-top: 10px;
   box-shadow: 3px 3px 3px 3px blue;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+
+  border-radius: 10px;
 }
 
 .contenedor-animacion{
@@ -58,4 +66,5 @@
   background-color: rgb(37, 87, 131);
   margin-top: 10px;
   box-shadow: 3px 3px 3px 3px blue;
+  border-radius: 10px;
 }
