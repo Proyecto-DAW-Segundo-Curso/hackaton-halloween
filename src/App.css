@@ -13,24 +13,22 @@
   justify-content: space-around;
 }
 
-.contenedor-pregunta{
-  width: 95vw;
-  height: 10%;
-  background-color: aliceblue;
-  margin-top: 10px;
-  box-shadow: 3px 3px 3px 3px blue;
-  border-radius: 10px;
-}
+.contenedor-pregunta {
+    width: 90%;
+    height: 40vh;
+    background-color: #1b1b1b; 
+    margin: 20px auto;
+    box-shadow: 0px 0px 20px rgba(255, 117, 24, 0.5), 0px 0px 25px rgba(0, 0, 0, 0.8); 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ff7518;
+  }
+  
 
-.contenedor-respuesta{
-  width: 95vw;
-  height: 10%;
-  background-color: aliceblue;
-  margin-top: 10px;
-  box-shadow: 3px 3px 3px 3px blue;
-  border-radius: 10px;
 
-}
 
 .contenedor-juego{
   width: 95vw;

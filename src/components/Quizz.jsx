@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Quizz.css'
 
 const Adivinanza = () => {
 
@@ -24,12 +25,14 @@ const Adivinanza = () => {
     const [mensaje, setMensaje] = useState('');
     const [respuestaCorrecta, setRespuestaCorrecta] = useState(false);
     const [adivinanzasPendientes, SetAdivinanzasPendientes]= useState(adivinanzas);
+    const [juegoTerminado, setJuegoTerminado] = useState(false);
 
     //saca un adivinzanza aleatoria, reinicia el estado de respuesta correcta y limpia mensaje escrito por usuario
     const randomRiddle = () => {
 
-        if(adivinanzasPendientes===0){
+        if(adivinanzasPendientes.length==0){
                 setMensaje("¡Enhorabuena, has conseguido escapar de(l) JSON");
+                setJuegoTerminado(true);
                 return;
         }
 
@@ -42,6 +45,9 @@ const Adivinanza = () => {
     //verificamos respuesta a partir del index de la adivinanza y sacamos mensaje de respuesta correcta o incorrecta
     const verificarRespuesta = (event) => {
         event.preventDefault();
+        if(juegoTerminado){
+            return;
+        }
         const indice = adivinanzas.indexOf(retoSeleccionado);
         const respuestaCorrectaTexto = respuestas[indice];
 
@@ -58,15 +64,16 @@ const Adivinanza = () => {
 
     // Generar adivinanza al inicio de la app
     React.useEffect(() => {
-        randomRiddle();
-    }, []);
+        if(!juegoTerminado) randomRiddle();
+    }, [adivinanzasPendientes,juegoTerminado]);
 
     return (
-        <div>
+        <div className='contenedorPreguntas'>
             <h1>Adivinanza de Halloween</h1>
             <p>{retoSeleccionado}</p>
             <form onSubmit={verificarRespuesta}>
                 <input
+                    className='enviar'
                     type="text"
                     value={respuestaUsuario}
                     onChange={(e) => setRespuestaUsuario(e.target.value)}
@@ -79,7 +86,7 @@ const Adivinanza = () => {
 
             {/* Mostrar botón "Siguiente Adivinanza" solo si la respuesta es correcta */}
             {respuestaCorrecta && (
-                <button onClick={randomRiddle}>Siguiente Adivinanza</button>
+                <button className='enviar' onClick={randomRiddle}>Siguiente Adivinanza</button>
             )}
         </div>
     );
