@@ -10,10 +10,6 @@ function App() {
         <div className='contenedor-pregunta'>
           <Quizz>a</Quizz>
         </div>
-        
-        <div className='contenedor-respuesta'>
-          {/* Aquí puedes agregar el contenido de la respuesta */}
-        </div>
 
         <div className='contenedor-juego'>
           <div className='contenedor-botones'>
