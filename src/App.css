@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #56A9CD;
+}
+
+.contenedor-principal{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor-pregunta{
+  width: 95vw;
+  height: 10%;
+  background-color: aliceblue;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px 3px blue;
+  border-radius: 10px;
+}
+
+.contenedor-respuesta{
+  width: 95vw;
+  height: 10%;
+  background-color: aliceblue;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px 3px blue;
+  border-radius: 10px;
+
+}
+
+.contenedor-juego{
+  width: 95vw;
+  height: 60%;
+  background-color: aliceblue;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px 3px blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.contenedor-botones{
+  width: 30%;
+  height: 90%;
+  background-color: rgb(37, 87, 131);
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px 3px blue;
+  border-radius: 10px;
+}
+
+.contenedor-animacion{
+  width: 60%;
+  height: 90%;
+  background-color: rgb(37, 87, 131);
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px 3px blue;
+  border-radius: 10px;
+}
