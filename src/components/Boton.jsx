@@ -2,15 +2,14 @@
 import '../styles/Boton.css';
 
 function Boton(props) {
-
 	const esInicio = (valor) => {
-		return valor !== 0;
+		return valor !== true;
 	}
 
 	return (
 		<div 
 			className='cajaBoton'
-			onClick={() => {}}
+			onClick={(valor) => {}}
 		>
 			{props.children}
 		</div>

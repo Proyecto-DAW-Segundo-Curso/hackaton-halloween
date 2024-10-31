@@ -1,23 +1,26 @@
 .cajaBoton{
-    box-shadow: 2px 2px rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(0, 0, 0);
     width: 75%;
-    height: 25%;
-    margin-top: 100px;
+    height: 20%;
     border-radius: 200px;
-    background-color: #8B0000;
+    background-color: #011553;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    text-align: center;
-    text-justify: center;
-    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    user-select: none;
+    font: bold;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+
+    
 }
 
-.cajaBoton :hover{
+.cajaBoton:hover{
     box-shadow: none;
-    background-color: rgb(9, 9, 9);
+    background-color: #152a69;
 }
